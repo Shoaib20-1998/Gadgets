@@ -9,9 +9,11 @@ const Mainpage = () => {
 
     return (
         <>
+            
             <Nav />
             <MiddleContainer />
             <Footer />
+            
             
         </>
 

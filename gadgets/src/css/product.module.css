@@ -1,0 +1,78 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.productmaindiv{
+    width: 80%;
+    margin: auto;
+    border:1px solid black;
+    display: flex;
+}
+
+.leftdiv{
+
+    width: 80%;
+    border: 1px solid red;
+
+}
+.rightdiv{
+
+    width: 20%;
+    border: 1px solid blue;
+
+}
+.topleft{
+    width: 100%;
+    color: black;
+    background-color:#F2F2F2 ;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+}
+.popularfilter>button{
+
+    border-radius: 15px;
+    background-color: #F2F2F2;
+    margin: 5px;
+    padding: 10px;
+}
+
+.popularfilter>h1{
+
+   font-weight: bold;
+    margin: 5px;
+    padding: 10px;
+}
+.main{
+    display: flex;
+}
+.filters{
+    width: 25%;
+    margin: 5px;
+    padding: 10px;
+}
+.product{
+    width: 75%;
+    margin: 5px;
+    padding: 10px;
+}
+.singleproduct{
+    
+    justify-content:space-between;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 20px;
+    margin: 5px;
+    padding: 5px;
+    
+}
+
+.singleproduct>div{
+    
+    display: flex;
+    justify-content: space-evenly;
+   width: 100%;
+    margin: 5px;
+    padding: 5px;
+   
+}

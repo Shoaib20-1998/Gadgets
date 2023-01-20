@@ -4,6 +4,7 @@ import img from '../images/GadgetTree.png'
 import axios from 'axios';
 import { IconName } from "react-icons/ai";
 import Dropdown from '../ChakraComp/dropdown';
+import{ Link} from 'react-router-dom'
 export function Nav() {
 
 
@@ -32,7 +33,7 @@ export function Nav() {
             <img style={{ marginLeft: "455px" }} width="25%%" src='https://us.123rf.com/450wm/leberus/leberus1912/leberus191200011/leberus191200011.jpg?ver=6' alt="Gadge" />
         </div>
         <div className={styles.middlenav}>
-            <button>HOME</button>
+           <Link to="/"><button>HOME</button></Link> 
             <button>GUIDE</button>
             <button>AUTO EXPO 2023</button>
             <button>NEWS</button>
