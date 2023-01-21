@@ -6,29 +6,31 @@
 .productmaindiv{
     width: 80%;
     margin: auto;
-    border:1px solid black;
+
     display: flex;
 }
 
 .leftdiv{
 
     width: 80%;
-    border: 1px solid red;
+   
 
 }
 .rightdiv{
 
     width: 20%;
-    border: 1px solid blue;
+    
 
 }
 .topleft{
     width: 100%;
+    height: auto;
     color: black;
     background-color:#F2F2F2 ;
     padding: 10px;
     margin: 5px;
     border-radius: 20px;
+    
 }
 .popularfilter>button{
 
@@ -75,4 +77,32 @@
     margin: 5px;
     padding: 5px;
    
+}
+.pagination{
+    background-color: #FF1616;
+    color: white;
+    font-size: large;
+    padding: 15px;
+    margin: 5px;
+    text-align: center;
+}
+.pagination>button{
+    
+    font-size: large;
+    padding: 15px;
+    margin: 5px;
+}
+.filters{
+    background-color: #EDEDED;
+}
+.sortorder{
+   
+}
+
+.sortorder>button{
+   background-color:#FF1616;
+   color: white;
+   border: 1px dotted white;
+   padding: 5px 20px;
+   width: 100%;
 }

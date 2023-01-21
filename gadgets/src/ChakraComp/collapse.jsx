@@ -1,4 +1,4 @@
-import { Button, Collapse, isOpen } from "@chakra-ui/react";
+import { Button, Collapse } from "@chakra-ui/react";
 import { useState } from "react";
 
 function MobilePhones() {
@@ -16,9 +16,27 @@ function MobilePhones() {
         </Collapse>
         {/* <Button bg="red" color="white"size="sm" onClick={handleToggle} mt=".5rem">
           Show {show ? "Less" : "More"}
-        </Button>  isOpen={show} */}
+        </Button> isOpen={show}   */}
       </>
     );
   }
+
+  //   const [show, setShow] = useState(false);
+  
+  //   const handleToggle = () => setShow(!show);
+  
+  //   return (
+  //     <>
+  //       <Collapse  style={{height:"auto"}} startingHeight={200} isOpen={true}>
+  //         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+  //         terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
+  //         labore wes anderson cred nesciunt sapiente ea proident.
+  //       </Collapse>
+  //       <Button size="sm" onClick={handleToggle} mt="1rem">
+  //         Show {show ? "Less" : "More"}
+  //       </Button>
+  //     </>
+  //   );
+  // }
 
   export default MobilePhones;
