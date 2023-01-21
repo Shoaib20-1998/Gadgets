@@ -22,6 +22,10 @@
     
    
 }
+.TopNavbuttons>button:hover{
+    background-color: black;
+    color: white;
+}
 
 .fullwidth2{
     width: 100%;

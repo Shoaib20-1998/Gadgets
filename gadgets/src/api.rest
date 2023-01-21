@@ -1,1 +1,1 @@
-GET https://dummyjson.com/products
+GET http://localhost:8080/products?_order=desc&_sort=price

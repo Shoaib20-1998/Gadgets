@@ -57,6 +57,9 @@ export const Rightdiv = () => {
                     <div>TCL 408</div>
                     <div>Infinix Zero</div>
                     <div>Infinix Zero</div>
+                    <div>Foldable Smartphone</div>
+                    <div>Infinix Zero</div>
+                    <div>TCL NxtPaper 12 Pro</div>
                     
 
 
@@ -87,6 +90,9 @@ export const Rightdiv = () => {
                     <div>Fire-Boltt Infinity</div>
                     <div>Redmi Watch 3</div>
                     <div> Alibaba</div>
+                    <div>Foldable Smartphone</div>
+                    <div>Infinix Zero</div>
+                    <div>TCL NxtPaper 12 Pro</div>
 
                     
                    

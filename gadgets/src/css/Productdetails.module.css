@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.main{
+    height: 2000px;
+    width: 80%;
+    border: 1px solid black;
+    margin: 5px auto;
+    padding: 10px;
+    
+}
+.datadiv{
+    display: flex;
+}
+.right{
+    border: 1px solid red;
+    width: 25%;
+}
+.left{
+    border: 1px solid blue;
+    width: 75%;
+    
+}
+.fourimage{
+    display: flex;
+
+}
+.fourimage>div{
+    margin: 5px;
+    padding: 5px;
+    
+    height: 150px;
+}
+.fourimage>div>img{
+    margin: 5px;
+    padding: 5px;
+    
+    height: 150px;
+}
+.leftdiv1{
+    display: flex;
+    margin: 5px;
+    padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+}
+.leftdiv1>div{
+    width: 50%;
+    margin: 5px;
+    padding: 5px;
+    
+    
+}
