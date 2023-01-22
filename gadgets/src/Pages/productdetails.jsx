@@ -1,7 +1,7 @@
 import { Footer } from "../Component/footer";
 import { Nav } from "../Component/navbar";
 import { useParams } from "react-router-dom";
-import StarUzair from "../ChakraComp/reactstar";
+import StarUzair2 from "../ChakraComp/Reviews";
 import styles from '../css/Productdetails.module.css'
 import { Rightdiv } from "../Component/rightdiv";
 import axios from "axios";
@@ -34,6 +34,7 @@ import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
 import { MdLocalShipping } from 'react-icons/md';
 import Item from "antd/es/list/Item";
 import { Tabs } from "antd";
+import Reviewdiv from "../Component/reviewsdiv";
 const ProductDetails = () => {
   const [data, setdata] = useState()
   const { id } = useParams()
@@ -126,25 +127,151 @@ const ProductDetails = () => {
                   <img src={data?.images[3]} alt="" />
                 </div>
               </div>
+
+              <div style={{ marginTop: "20px", padding: "10px" }}>
+                <Box>
+                  <Text
+                    fontSize={{ base: '16px', lg: '18px' }}
+                    color={useColorModeValue('red')}
+                    fontWeight={'500'}
+                    textTransform={'uppercase'}
+                    mb={'4'}>
+                    General
+                  </Text>
+
+                  <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
+                    <List spacing={2}>
+                      <ListItem>Brand - {data?.brand}</ListItem>
+                      <ListItem>Model - A78 G9 54u</ListItem>
+                      <ListItem>Price in India - {data?.price}</ListItem>
+                      <ListItem>Release date - 16th January 2023</ListItem>
+
+                      <ListItem>Fast charging	- Super VOOC</ListItem>
+                      <ListItem>Colours -	Glowing Black, Glowing Purple</ListItem>
+
+                    </List>
+                    <List spacing={2}>
+
+                      <ListItem>Form factor -	Touchscreen</ListItem>
+                      <ListItem>Dimensions (mm) -	163.80 x 75.10 x 7.99</ListItem>
+                      <ListItem>Weight (g) - 188.00</ListItem>
+                      <ListItem>IP rating	- IPX4</ListItem>
+                      <ListItem>Launched in India - Yes</ListItem>
+
+                    </List>
+                  </SimpleGrid>
+                </Box>
+
+
+              </div>
+              <div style={{ marginTop: "20px", padding: "10px" }}>
+                <Box>
+                  <Text
+                    fontSize={{ base: '16px', lg: '18px' }}
+                    color={useColorModeValue('red')}
+                    fontWeight={'500'}
+                    textTransform={'uppercase'}
+                    mb={'4'}>
+                    Specification
+                  </Text>
+
+                  <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
+                    <List spacing={2}>
+                      <ListItem>Display
+                        6.56-inch (720x1612)</ListItem>
+                      <ListItem>
+                        Processor
+                        MediaTek Dimensity 700</ListItem>{' '}
+                      <ListItem>
+                        Front Camera
+                        8MP</ListItem>
+                      <ListItem>
+                        Battery Capacity
+                        5000mAh</ListItem>
+                    </List>
+                    <List spacing={2}>
+                      <ListItem>
+                        Rear Camera
+                        50MP + 2MP</ListItem>
+                      <ListItem>
+                        RAM
+                        8GB</ListItem>
+                      <ListItem>
+                        Storage
+                        128GB</ListItem>
+                      <ListItem>
+                        Skin - ColorOS 13</ListItem>
+                    </List>
+                  </SimpleGrid>
+                </Box>
+
+
+              </div>
+
+              <div style={{ marginTop: "20px", padding: "10px" }}>
+                <Box>
+                  <Text
+                    fontSize={{ base: '16px', lg: '18px' }}
+                    color={useColorModeValue('red')}
+                    fontWeight={'500'}
+                    textTransform={'uppercase'}
+                    mb={'4'}>
+                    Conennectivity & Sensors
+                  </Text>
+
+                  <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
+                    <List spacing={2}>
+                      <ListItem>
+                        Wi-Fi - Yes</ListItem>
+                      <ListItem>Wi-Fi standards supported -	802.11 a/b/g/n/ac</ListItem>
+                      <ListItem>GPS -	Yes</ListItem>
+                      <ListItem>Bluetooth	- Yes, v 5.30</ListItem>
+                      <ListItem>USB OTG -	Yes</ListItem>
+                      <ListItem>USB Type-C - Yes</ListItem>
+                      <ListItem>Headphones - 3.5mm</ListItem>
+
+                    </List>
+                    <List spacing={2}>
+
+                      <ListItem>Face unlock -	Yes</ListItem>
+                      <ListItem>Fingerprint sensor - Yes</ListItem>
+                      <ListItem>Compass/ Magnetometer -	Yes</ListItem>
+                      <ListItem>Proximity sensor - Yes</ListItem>
+                      <ListItem>Accelerometer - Yes</ListItem>
+                      <ListItem>Ambient light sensor - Yes</ListItem>
+
+                    </List>
+                  </SimpleGrid>
+                </Box>
+
+
+              </div>
+
+
             </div>
-            
+
 
             <div className={styles.leftdiv2}>
-              <Container style={{textAlign:"left"}}>
-                <SimpleGrid width="970px" 
+              <Container style={{ textAlign: "left" }}>
+                <SimpleGrid width="970px"
                   columns={{ base: 1, lg: 2 }}
                   spacing={{ base: 4, md: 5 }}
                   py={{ base: 4, md: 8 }}>
 
-                  <Stack spacing={{ base: 6, md: 10 }}  marginTop="0px">
+                  <Stack spacing={{ base: 6, md: 10 }}>
                     <Box as={'header'}>
                       <Heading
                         lineHeight={1.1}
                         fontWeight={600}
                         fontSize={{ base: '2xl', sm: '4xl', lg: '5xl' }}>
-                        ₹{data?.price}/-
+                        {data?.title} - {data?.brand} ({data?.category})
                       </Heading>
-                      
+                      <Text
+                        color={useColorModeValue('red')}
+                        fontWeight={300}
+                        fontSize={'2xl'}>
+                        ₹{data?.price}/-
+                      </Text>
                     </Box>
 
                     <Stack
@@ -169,30 +296,7 @@ const ProductDetails = () => {
                       <Box>
                         <Text
                           fontSize={{ base: '16px', lg: '18px' }}
-                          color={useColorModeValue('yellow.500', 'yellow.300')}
-                          fontWeight={'500'}
-                          textTransform={'uppercase'}
-                          mb={'4'}>
-                          Features
-                        </Text>
-
-                        <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
-                          <List spacing={2}>
-                            <ListItem>Chronograph</ListItem>
-                            <ListItem>Master Chronometer Certified</ListItem>{' '}
-                            <ListItem>Tachymeter</ListItem>
-                          </List>
-                          <List spacing={2}>
-                            <ListItem>Anti‑magnetic</ListItem>
-                            <ListItem>Chronometer</ListItem>
-                            <ListItem>Small seconds</ListItem>
-                          </List>
-                        </SimpleGrid>
-                      </Box>
-                      <Box>
-                        <Text
-                          fontSize={{ base: '16px', lg: '18px' }}
-                          color={useColorModeValue('yellow.500', 'yellow.300')}
+                          color={useColorModeValue('red')}
                           fontWeight={'500'}
                           textTransform={'uppercase'}
                           mb={'4'}>
@@ -246,6 +350,22 @@ const ProductDetails = () => {
                         </List>
                       </Box>
                     </Stack>
+                    <div>
+                      <Box>
+                        <Text
+                          fontSize={{ base: '16px', lg: '18px' }}
+                          color={useColorModeValue('red')}
+                          fontWeight={'500'}
+                          textTransform={'uppercase'}
+                          mb={'4'}>
+                          Reviews
+                        </Text>
+                      </Box>
+                      <StarUzair2 />
+
+
+                    </div>
+
 
                     <a href="https://www.amazon.in/dp/B082F2T5PQ?tag=kp-web-price-in-india-21&linkCode=ogi&th=1&psc=1&SubscriptionId=AKIAJZ7ZVEW7WHEFIMWA&ascsubtag=127946760&language=en_IN"> <Button
 
@@ -275,12 +395,12 @@ const ProductDetails = () => {
           </div>
           <Card />
         </div>
-        <div className={styles.right}><Rightdiv /></div>
+        <div className={styles.right}><Reviewdiv /></div>
 
       </div>
 
     </div>
-    
+
     <Footer />
 
   </>

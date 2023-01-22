@@ -153,7 +153,7 @@ const MiddleContainer = ({ image, disc }) => {
                         <div><img width="67%" src="https://i.gadgets360cdn.com/products/small/oppo-a78-5g-db-240x180-1673589076.jpg?downsize=*:80" alt="" />
                             <p>Oppo A78 5G</p>
                         </div>
-                        <div><img src="https://i.gadgets360cdn.com/products/small/My-project-1-240x180-1672901842.png?downsize=*:80" alt="" />
+                        <div> <a href="https://www.gadgets360.com/samsung-galaxy-a14-5g-price-in-india-115161#pfrom=home"><img src="https://i.gadgets360cdn.com/products/small/My-project-1-240x180-1672901842.png?downsize=*:80" alt="" /></a>  
                             <p>Samsung A14 Galaxy 5G</p>
                         </div>
                         <div><img src="https://i.gadgets360cdn.com/products/small/galaxy-a23-db-240x180-1673878412.jpg?downsize=*:80" alt="" />
@@ -255,7 +255,7 @@ const MiddleContainer = ({ image, disc }) => {
                         <div><img src="https://i.gadgets360cdn.com/large/samsung_galaxy_a73_5g_image_small_1648537538991.jpg?downsize=232:*" alt="" />
                             <p>Samsung Galaxy A34 5G Appears on BIS Listing, Could Be Launched in India Soon: Report</p>
                         </div>
-                        <div><img src="https://i.gadgets360cdn.com/large/twitter_blog_small_1670580346987.jpg?downsize=232:*" alt="" />
+                        <div><a href="https://www.gadgets360.com/apps/news/twitter-update-for-you-feed-bookmarks-translation-feature-ios-android-3711915#pfrom=home-popular"><img src="https://i.gadgets360cdn.com/large/twitter_blog_small_1670580346987.jpg?downsize=232:*" alt="" /></a>
                             <p>Twitter Blue Android Pricing Announced, Cheaper Annual Plan for Web Users Introduced: All Details</p>
                         </div>
                         <div><img width="69%" src="https://i.gadgets360cdn.com/large/tecno_spark_2023_tecno_thumb_1674122820278.jpg?downsize=232:*" alt="" />
