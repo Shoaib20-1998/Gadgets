@@ -61,13 +61,13 @@
     margin: auto;
     text-align: center;
     align-items: center;
-}
-.reviews{
-    margin: auto;
+    justify-content: space-between;
 }
 .reviews>img{
-    display: block;
+    width: 60%;
+    margin-left: 50px;
 }
+
 .reviewsmain>div>button{
    border:1px dotted white ;
    background-color: red;

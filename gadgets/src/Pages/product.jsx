@@ -66,55 +66,55 @@ const Product = () => {
     const Sortasc = () => {
         let order = "asc"
         let type = "price"
-        axios.get(`http://localhost:8080/products?_order=${order}&_sort=${type}`)
+        axios.get(`http://localhost:8080/products?_limit=6&_order=${order}&_sort=${type}`)
             .then((res) => setdata(res.data))
     }
     const Sortdsc = () => {
         let order = "desc"
         let type = "price"
-        axios.get(`http://localhost:8080/products?_order=${order}&_sort=${type}`)
+        axios.get(`http://localhost:8080/products?_limit=6&_order=${order}&_sort=${type}`)
             .then((res) => setdata(res.data))
 
     }
     const discountasc = () => {
         let order = "asc"
         let type = "discountPercentage"
-        axios.get(`http://localhost:8080/products?_order=${order}&_sort=${type}`)
+        axios.get(`http://localhost:8080/products?_limit=6&_order=${order}&_sort=${type}`)
             .then((res) => setdata(res.data))
 
     }
     const discountdesc = () => {
         let order = "desc"
         let type = "discountPercentage"
-        axios.get(`http://localhost:8080/products?_order=${order}&_sort=${type}`)
+        axios.get(`http://localhost:8080/products?_limit=6&_order=${order}&_sort=${type}`)
             .then((res) => setdata(res.data))
 
     }
     const ratingasc = () => {
         let order = "asc"
         let type = "rating"
-        axios.get(`http://localhost:8080/products?_order=${order}&_sort=${type}`)
+        axios.get(`http://localhost:8080/products?_limit=6&_order=${order}&_sort=${type}`)
             .then((res) => setdata(res.data))
 
     }
     const ratingdesc = () => {
         let order = "desc"
         let type = "rating"
-        axios.get(`http://localhost:8080/products?_order=${order}&_sort=${type}`)
+        axios.get(`http://localhost:8080/products?_limit=6&_order=${order}&_sort=${type}`)
             .then((res) => setdata(res.data))
 
     }
     const staockasc = () => {
         let order = "asc"
         let type = "stock"
-        axios.get(`http://localhost:8080/products?_order=${order}&_sort=${type}`)
+        axios.get(`http://localhost:8080/products?_limit=6&_order=${order}&_sort=${type}`)
             .then((res) => setdata(res.data))
 
     }
     const stockdesc = () => {
         let order = "desc"
         let type = "stock"
-        axios.get(`http://localhost:8080/products?_order=${order}&_sort=${type}`)
+        axios.get(`http://localhost:8080/products?_limit=6&_order=${order}&_sort=${type}`)
             .then((res) => setdata(res.data))
 
     }
