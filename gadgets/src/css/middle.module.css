@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+.Container {
+
+    width: 80%;
+    margin: auto;
+}
+
+.topdiv {
+    display: flex;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    justify-content: left;
+}
+
+.topdiv>div>h4 {
+
+    color: white;
+    background-color: red;
+    padding: 10px;
+
+}
+
+.midddiv {
+    display: flex;
+    font-size: small;
+}
+
+.submid1 {
+    
+    height: 120px;
+    width: 200px;
+    padding: 10px;
+    margin: 5px;
+
+}
+
+.submid1>div{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 10px;
+    margin: 5px;
+    background-color: rgb(241,241,241);
+}
+
+.submid2 {
+    display: flex;
+    padding: 10px;
+    margin: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+.submid2>div{
+   
+    padding: 10px;
+    margin: 5px;
+    width: 200px;
+}
+
+.productfinder{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    padding: 10px;
+    margin: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: center;
+
+}
+.productfinder>div{
+    
+    padding: 10px;
+    margin: 5px;
+    width: 100px;
+
+}
+.productfinder>div>button{
+    
+    background-color:rgb(255,22,22) ;
+    padding: 5px;
+    margin: 5px;
+    color: white;
+    border-radius: 4px;
+
+}
+.popular{
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 10px;
+    margin: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: left;
+
+}
+.popular>div{
+
+    width: 200px;
+}
+
+.submid3{
+
+   
+    padding: 10px;
+    margin: 5px;
+
+}
+.submid3>div{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 10px;
+    margin: 5px;
+    background-color: white;
+    width: 200px;
+}
+.submid3>div>button{
+    background-color:rgb(255,22,22) ;
+    padding: 5px;  
+    color: white;
+    border-radius: 4px;
+    display: block;
+    margin: 5px auto;
+   
+}
+
+.subsubmid3{
+    display: flex;
+    padding: 10px;
+    margin: 5px;
+
+}
+
+.subsubmid3>div>div{
+    width: 80px;
+    padding: 0px;
+    margin: 2px;
+    border: 1px black dotted;
+    font-size: small;
+
+}
+.last{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 10px;
+    margin: 5px;
+    width: 200px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: white;
+
+
+}
+.last>div{
+    padding: 5px;
+    margin: 5px;
+    width: 100%;
+}
