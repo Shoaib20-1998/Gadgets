@@ -7,7 +7,7 @@
 .main{
     height: 2000px;
     width: 80%;
-    border: 1px solid black;
+    
     margin: 5px auto;
     padding: 10px;
     
@@ -16,11 +16,11 @@
     display: flex;
 }
 .right{
-    border: 1px solid red;
+   
     width: 25%;
 }
 .left{
-    border: 1px solid blue;
+   
     width: 75%;
     
 }
@@ -53,4 +53,25 @@
     padding: 5px;
     
     
+}
+
+
+.reviewsmain{
+    display: flex;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+}
+.reviews{
+    margin: auto;
+}
+.reviews>img{
+    display: block;
+}
+.reviewsmain>div>button{
+   border:1px dotted white ;
+   background-color: red;
+   padding: 5px 10px;
+   margin-top: 25px;
+   color: white;
 }
