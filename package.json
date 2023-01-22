@@ -1,20 +1,50 @@
 {
-3    "name": "sad-ray-7934",
-4    "version": "1.0.0",
-5    "description": "",
-6    "scripts": {
-7        "build": "echo \"No build specified\" && exit 1",
-8        "test": "echo \"No test specified\" && exit 1",
-9        "start": "node index.js"
-10    },
-11    "repository": {
-12        "type": "git",
-13        "url": "git+https://github.com/Shoaib20-1998/sad-ray-7934.git"
-14    },
-15    "author": "",
-16    "license": "ISC",
-17    "bugs": {
-18        "url": "https://github.com/Shoaib20-1998/sad-ray-7934/issues"
-19    },
-20    "homepage": "https://github.com/Shoaib20-1998/sad-ray-7934#readme"
-21}
+  "name": "gadgets",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@chakra-ui/icons": "^2.0.16",
+    "@chakra-ui/react": "^2.4.9",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "antd": "^5.1.6",
+    "axios": "^1.2.3",
+    "dotenv": "^16.0.3",
+    "framer-motion": "^8.4.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.7.1",
+    "react-rating-stars-component": "^2.2.0",
+    "react-router-dom": "^6.7.0",
+    "react-scripts": "5.0.1",
+    "react-star-ratings": "^2.3.0",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
