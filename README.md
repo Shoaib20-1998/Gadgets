@@ -1,5 +1,5 @@
 # Gadgets++
-A clone of Gadgets 360 which build on top of the react + chakra ui
+build on top of the react + chakra ui
 
 ![Gadget Tree](https://user-images.githubusercontent.com/112754545/212953110-21d91936-833d-456b-be71-7c9396715598.png)
 
